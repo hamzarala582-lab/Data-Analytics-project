@@ -1,0 +1,430 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {
+    "id": "gtlAv2oq9yzd"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n",
+      "30\n",
+      "60\n",
+      "100\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Write a Python program to find the sum of all elements in a list using loop.\n",
+    "#Input:- [10,20,30,40]\n",
+    "#Output:- 100\n",
+    "a=[10,20,30,40]\n",
+    "s=0\n",
+    "for i in a:\n",
+    "    s=s+i\n",
+    "    print(s)\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {
+    "id": "gTbA8psa93Y_"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n",
+      "200\n",
+      "6000\n",
+      "240000\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Write a Python program to find the multiplication of all elements in a list using loop.\n",
+    "#Input:- [10,20,30,40]\n",
+    "#Output:- 240000\n",
+    "a=[10,20,30,40]\n",
+    "m=1\n",
+    "for i in a:\n",
+    "    m=m*i\n",
+    "    print(m)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {
+    "id": "XBCrEtLN94Lj"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n",
+      "100\n",
+      "2321\n",
+      "2321\n",
+      "2321\n",
+      "2321\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Write a Python program to find the largest number from a list using loop.\n",
+    "#Input:- [10,100,2321, 1,200,2]\n",
+    "#Output:- 2321\n",
+    "a=[10,100,2321, 1,200,2]\n",
+    "lst=a[0]\n",
+    "for i in a:\n",
+    "    if i>lst:\n",
+    "        lst=i\n",
+    "    print(lst)\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {
+    "id": "l3paUtbH94Vw"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "[21, 87, 45, 33, 1]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Write a Python program to find the smallest number from a list using loop.\n",
+    "#Input:- [10,100,2321, 1,200,2]\n",
+    "#Output:- 1\n",
+    "a=[10,100,2321, 1,200,2]\n",
+    "lst=a[0]\n",
+    "for i in a:\n",
+    "    if i<lst:\n",
+    "        lst=i\n",
+    "        print(lst)\n",
+    "\n",
+    "#Write a Python program which takes a list of numbers as input and prints a new list after removing even numbers from it.\n",
+    "#Input:- [10,21,22,98,87,45,33,1,2,100]\n",
+    "#Output:- [21,87,45,33,1]\n",
+    "lst=[10,21,22,98,87,45,33,1,2,100]\n",
+    "e_lst=[i for i in lst if i%2==1]\n",
+    "print(e_lst)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {
+    "id": "JTVgy5VD94cE"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Write a Python program to count the number of strings having length more than 2 and are palindrome in a list using loop.\n",
+    "#Input:- ['ab', 'abc', 'aba', 'xyz', '1991']\n",
+    "#Output:- 2\n",
+    "lst=['ab', 'abc', 'aba', 'xyz', '1991']\n",
+    "c=0\n",
+    "for i in lst:\n",
+    "    if i==i[::-1] and len(i)>2:\n",
+    "        c=c+1\n",
+    "\n",
+    "print(c)\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {
+    "id": "xs-ZGJbJ94gr"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 9, 10, 65, 80, 100, 298, 483, 9213, 49876]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Write a Python program to sort a list in ascending order using loop.\n",
+    "#Input:- [100,10,1,298,65,483,49876,2,80,9,9213]\n",
+    "#Output:- [1,2,9,10,65,80,100,298,483,9213,49876]\n",
+    "lst=[100,10,1,298,65,483,49876,2,80,9,9213]\n",
+    "a=[]\n",
+    "for i in range(1,49877):\n",
+    "    if i in lst:\n",
+    "            a.append(i)\n",
+    "        \n",
+    "    \n",
+    "print(a)   \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "VhKQJizZ94kg"
+   },
+   "outputs": [],
+   "source": [
+    "#Write a Python program to get a sorted list in increasing order of last element in each tuple in a given list using loop.\n",
+    "#Input:- [(5,4),(9,1),(2,3),(5,9),(7,6),(5,5)]\n",
+    "#output:- [(9,1),(2,3),(5,4),(5,5),(7,6),(5,9)]\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "id": "YJrCLYp694n_"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 1, 11, 29, 876, 768, 92]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Write a Python program to remove fuplicate element from a list using loop.\n",
+    "#Input:- [10,1,11,1,29,876,768,10,11,1,92,29,876]\n",
+    "#Output:- [10,1,11,29,876,768,92]\n",
+    "lst=[10,1,11,1,29,876,768,10,11,1,92,29,876]\n",
+    "a=[]\n",
+    "for i in lst:\n",
+    "    if i not in a:\n",
+    "        a.append(i)\n",
+    "\n",
+    "print(a)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {
+    "id": "koYe4YCu94rh"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "list is empty\n",
+      "list is not empty\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Write a Python program to check a list is empty or not?\n",
+    "#Input:- []\n",
+    "#Output:- List is empty\n",
+    "#Input:- [10,20,30]\n",
+    "#Output:- List is not empty\n",
+    "lst=[]\n",
+    "if len(lst)==0:\n",
+    "    print(\"list is empty\")\n",
+    "else:\n",
+    "    print(\"list is not empty\")\n",
+    "\n",
+    "\n",
+    "lst1= [10,20,30]\n",
+    "if len(lst1)==0:\n",
+    "    print(\"list is empty\")\n",
+    "else:\n",
+    "    print(\"list is not empty\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {
+    "id": "mES1WANa94u5"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[10, 10.2, (10+20j), 'Python', [10, 20], (10, 20)]\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Write a Python program to copy a list using loop.\n",
+    "#inp_lst = [10,10.20,10+20j, 'Python', [10,20], (10,20)]\n",
+    "#out_lst = [10,10.20,10+20j, 'Python', [10,20], (10,20)]\n",
+    "inp_lst = [10,10.20,10+20j, 'Python', [10,20], (10,20)]\n",
+    "a=[]\n",
+    "for i in inp_lst:\n",
+    "    a.append(i)\n",
+    "\n",
+    "print(a)    \n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {
+    "id": "CpBh31WO94yi"
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "['How', 'much', 'wood', 'would', 'a', 'woodchuck', 'chuck', 'if', 'could']\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Write a Python program to find the list of words that are longer than or equal to 4 from a given string.\n",
+    "#Input:- 'How much wood would a woodchuck chuck if a woodchuck could chuck wood'\n",
+    "#Output:- ['much', 'wood', 'would', 'woodchuck', 'chuck', 'could']\n",
+    "#Note:- Duplicate should be avoided.\n",
+    "lst='How much wood would a woodchuck chuck if a woodchuck could chuck wood'\n",
+    "lst1=lst.split()\n",
+    "a=[]\n",
+    "for i in lst1:\n",
+    "    if len(lst1)>=4 and i not in a:\n",
+    "        a.append(i)\n",
+    "\n",
+    "print(a)        \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "YVfj0fgZ9416"
+   },
+   "outputs": [],
+   "source": [
+    "#Write a Python program which takes two list as input and returns True if they have at least 3 common elements.\n",
+    "#inp_lst1 = [10,20,'Python', 10.20, 10+20j, [10,20,30], (10,20,30)]\n",
+    "#inp_lst2 = [(10,20,30),1,20+3j,100.2, 10+20j, [10,20,30],'Python']\n",
+    "#Output:- True\n",
+    "lst=[10,20,'Python', 10.20, 10+20j, [10,20,30], (10,20,30)]\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {
+    "id": "7vwc3pjR945O"
+   },
+   "outputs": [],
+   "source": [
+    "#Write a Python program to create a 4X4 2D matrix with below elements using loop and list comprehension both.\n",
+    "#Output:- [[0,0,0,0],[0,1,2,3],[0,2,4,6],[0,3,6,9]]\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {
+    "id": "Pxafor84948b"
+   },
+   "outputs": [],
+   "source": [
+    "#Write a Python program to create a 3X4X6 3D matrix wiith below elements using loop\n",
+    "#Output:- \n",
+    "# [\n",
+    "#     [[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]],\n",
+    "#     [[0,0,0,0,0,0],[1,1,1,1,1,1],[2,2,2,2,2,2],[3,3,3,3,3,3]],\n",
+    "#     [[0,0,0,0,0,0],[2,2,2,2,2,2],[4,4,4,4,4,4],[6,6,6,6,6,6]]\n",
+    "# ]\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "lYNv8gk794_p"
+   },
+   "outputs": [],
+   "source": [
+    "#Write a Python program which takes a list of numbers as input and prints a new list after removing even numbers from it.\n",
+    "#Input:- [10,21,22,98,87,45,33,1,2,100]\n",
+    "#Output:- [21,87,45,33,1]\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "id": "3BaCb-rB95B7"
+   },
+   "outputs": [],
+   "source": [
+    "\n",
+    "\n",
+    "\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "colab": {
+   "name": "List_Assignment.ipynb",
+   "provenance": []
+  },
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
